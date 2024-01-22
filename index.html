@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="estilo.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="circulo"> </div>
+    <img src="./IMG/logo.png" alt="Logo Starbucks" class="Logo">
+   
+    <div class="Conteudo">
+
+        <div class="texto">
+
+    <h2> Não é apenas Cáfe, é um <strong><span> Starbucks</span></strong> </h2>
+    <P> Adentre o mundo dos sabores refinados em nossa cafetaria, onde cada xícara é uma jornada sensorial única. Deixe-se envolver pelo aroma cativante e pela qualidade incomparável do nosso café artesanal. Descubra um refúgio de prazer e sofisticação para os amantes da boa cafeína. Seu deleite começa aqui.</P>
+    <button> Faça o seu pedido</button>
+</div>
+   
+<div class="imagem">
+<img class="Copogrande" src="./IMG/img1.png" alt="CopoStarbucks">
+</div>
+
+
+</div>
+ <div class="Menu">
+ <img  src="./IMG/img-pequena1.png" class="Copo-pequeno Verde" >
+ <img  src="./IMG/img-pequena2.png" class="Copo-pequeno Rosa">
+ <img  src="./IMG/img-pequena3.png" class="Copo-pequeno Vermelho" >
+
+</div>
+<script>
+
+let circulo=document.querySelector(".circulo")
+let Copogrande = document.querySelector(".Copogrande")
+let Verde = document.querySelector(".Verde")
+let Rosa = document.querySelector(".Rosa")
+let Vermelho = document.querySelector(".Vermelho")
+
+Rosa.addEventListener("click", () => {
+ Copogrande.src="./img/img2.png"
+ circulo.style.background = "#eb7495"    
+})
+
+Verde.addEventListener("click", () => {
+ Copogrande.src="./img/img1.png"
+ circulo.style.background = "#7dfbaa"    
+})
+
+Vermelho.addEventListener("click", () => {
+ Copogrande.src="./img/img3.png"
+ circulo.style.background = "#943d8a"    
+})
+
+
+
+
+
+</script>
+
+
+</html>
